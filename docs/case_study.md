@@ -1,12 +1,7 @@
----
-
-# 🧾 **docs/case_study.md**
-
-```markdown
 # Spaceship Titanic: What Actually Happened
 *An end-to-end SQL investigation into the anomaly.*
 
----
+***
 
 ## ⚡ TL;DR
 
@@ -14,7 +9,7 @@ CryoSleep saved you — **82% transported vs 33% awake**.
 Every “pattern” (planet, deck, spending, destination) traced back to **CryoSleep adoption**.  
 One exception: **Starboard side** had a **10% directional advantage** — independent of CryoSleep.
 
----
+***
 
 ## 🧩 Setup
 
@@ -26,7 +21,7 @@ We have the manifest, time to decode the pattern.
 **Tools:** PostgreSQL + Python  
 **Goal:** Find what predicted transportation
 
----
+***
 
 ## 🧰 Method Overview
 
@@ -37,7 +32,7 @@ We have the manifest, time to decode the pattern.
 | Analysis | SQL | Aggregations & correlations |
 | Visualization | Python (matplotlib/seaborn) | Charts & validation |
 
----
+***
 
 ## 🔍 Data Quality Check
 
@@ -50,7 +45,7 @@ We have the manifest, time to decode the pattern.
 
 **Verdict:** Clean dataset (<3% missing overall). Reliable for SQL analysis.
 
----
+***
 
 ## 🧊 CryoSleep Dominates Everything
 
@@ -69,7 +64,7 @@ CryoSleep passengers were **2.5× more likely** to be transported, the strongest
 
 Data check: CryoSleep passengers spent $0 on all amenities → verified asleep.
 
----
+***
 
 ## 🌍 Europa’s Advantage (or not)
 
@@ -87,7 +82,7 @@ Looks huge, but CryoSleep explains it.
 Europa passengers just froze more often.  
 **Conclusion:** Planet “effect” = CryoSleep adoption rate, not biology.
 
----
+***
 
 ## 🛌 Deck Differences: Location Still Matters
 
@@ -119,7 +114,7 @@ Even with CryoSleep, **location on the ship mattered**. Deck B (upper) outperfor
 
 **Deck E (36%) is the baseline** - regular cabins, low CryoSleep access. It performs close to the overall awake passenger rate (33%).
 
----
+***
 
 ## 👶 Kids Had Higher Transport Rates
 
@@ -132,7 +127,7 @@ Even with CryoSleep, **location on the ship mattered**. Deck B (upper) outperfor
 
 Kids likely prioritized for CryoSleep → secondary effect.
 
----
+***
 
 ## 💸 Spending Didn’t Matter
 
@@ -144,7 +139,7 @@ Kids likely prioritized for CryoSleep → secondary effect.
 Spending = activity indicator, not wealth.  
 If you were awake and using amenities, you were vulnerable.  
 
----
+***
 
 ## ⚖️ The Starboard Mystery
 
@@ -162,7 +157,7 @@ Possible reasons:
 
 The only *true independent signal* in the data.
 
----
+***
 
 ## 🪐 Destination Effects
 
@@ -171,7 +166,7 @@ The only *true independent signal* in the data.
 Longer trips → higher transport rates.  
 CryoSleep usage increases with distance → confirms the main hypothesis.
 
----
+***
 
 ## 🧠 What We Learned
 
@@ -188,7 +183,7 @@ Everything else flows from that.
 ### Real Independent Signal
 Starboard side: 10% advantage → spatial anomaly.
 
----
+***
 
 ## 🧑‍💻 Technical Notes
 
@@ -208,7 +203,7 @@ Starboard side: 10% advantage → spatial anomaly.
 **Visualization:**
 Python + psycopg2 + seaborn/matplotlib.
 
----
+***
 
 ## 🧬 Implications for ML
 
@@ -229,7 +224,7 @@ Python + psycopg2 + seaborn/matplotlib.
 
 **Expected accuracy:** 75–80% (baseline logistic regression).
 
----
+***
 
 ## 🧭 Lessons Learned
 
@@ -237,7 +232,7 @@ Python + psycopg2 + seaborn/matplotlib.
 2. Most “patterns” dissolve once you isolate the dominant feature.  
 3. Clear documentation turns analysis into insight.  
 
----
+***
 
 ## 🧾 Bottom Line
 
@@ -246,6 +241,6 @@ If you were awake in the spa, you stayed.
 The rest, like planets, decks, and spending, were shadows of CryoSleep usage.  
 And, the port side is still cursed.
 
----
+***
 
 **Built with PostgreSQL, Python, and a tiny bit of curiosity.**
