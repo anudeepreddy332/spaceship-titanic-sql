@@ -1,0 +1,1 @@
+\copy spaceship_titanic_raw FROM 'data/spaceship_titanic.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
